@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <title>Licence Form</title>
+    <style>
+        .f1{
+            padding-left: 35%;
+        }
+       
+    </style>
+<script type='text/javascript'>
+function click()
+{
+  alert("Booking successful");
+}
+</script>
+</head>
+<body style="background-color:lightgray">
+    <h1 align="center">Driving Licence</h1><br><br>
+    <form class="f1">
+         <label>Date Of Birth: </label><input type='date' name='date'>
+          <br>
+        <label>Gender : </label><br><br>
+        <input type="radio" id="male" value="male"><label for="male">male</label>
+        <input type="radio" id="female" value="female"><label for="female">female</label>
+        <input type="radio" id="none" value="none"><label for="none">none</label><br><br>
+        <label>Pan Number: </label><input type="number" min="10" max="60"><br><br>
+        <label>Licence Number: </label><input type="number" min="10" max="60"><br><br>
+        <input type="submit" value="register" onsubmit='click()'><br><br><input type='reset' value='reset'>
+
+
+    </form>
+</body>
