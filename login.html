@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login Form</title>
+<script type='text/javascript'>
+function enter()
+{
+  var name=document.f.uname.value;
+  var pass=document.f.pwd.value;
+  if(name=='net'&& pass=='net')
+   {
+    alert("login successful");
+   }
+  else
+    {
+      alert("Invalid login credentials");
+     }
+ }
+</script>
+</head>
+<body align='center'>
+<form name='f' onsubmit='return enter()'>
+<label>username: <label><input type='text' name='uname' value="">
+<br><br>
+<label>password: </label><input type='password' name='pwd' value="">
+<input type='submit' value='login'>
+</form>
+</body>
+</html>
